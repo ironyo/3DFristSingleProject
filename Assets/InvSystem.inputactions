@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "name": "InvSystem",
+    "maps": [
+        {
+            "name": "Inv",
+            "id": "25a4ac72-58dc-416a-a244-006d6559eb4d",
+            "actions": [
+                {
+                    "name": "InvBut",
+                    "type": "Button",
+                    "id": "dd3ab7cc-0291-4146-8cd1-2ccafa7eb80b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c944f7bc-8264-4e3f-be74-e7b718c373f4",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InvBut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c25f9f7-7c38-4c0c-9f63-e2decf7b6284",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InvBut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f95bb795-4bae-42a8-a35e-fdb739e52edc",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InvBut",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
