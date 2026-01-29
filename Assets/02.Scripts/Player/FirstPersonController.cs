@@ -59,6 +59,7 @@ public class FirstPersonController : MonoBehaviour
     public void OnSprint(InputAction.CallbackContext context)
     {
         sprintHeld = context.ReadValueAsButton();
+        Debug.Log("Sprint: " + sprintHeld);
     }
 
 

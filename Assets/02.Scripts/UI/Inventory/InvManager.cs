@@ -53,6 +53,8 @@ public class InvManager : MonoBehaviour
 
 
             ClearInvTransform(num-1);
+            _invPageCompo[num - 1].MoveInv(false);
+
             NowSelectNum = num;
             _invPageCompo[num - 1].InvUISet(true);
 

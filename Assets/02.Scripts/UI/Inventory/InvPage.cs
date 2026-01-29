@@ -13,6 +13,14 @@ public class InvPage : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _itemNumText;
     [SerializeField] private Image _itemImage;
 
+
+    private Vector2 _originPos;
+
+    private void Awake()
+    {
+        _originPos = _childTransform.anchoredPosition;
+    }
+
     private void Start()
     {
         _itemText.gameObject.SetActive(false);
@@ -33,10 +41,12 @@ public class InvPage : MonoBehaviour
 
     public void MoveInv(bool isMove)
     {
-        if(isMove)
-            _childTransform.DOAnchorPosX(_childTransform.anchoredPosition.x-40, 0.2f);
+        _childTransform.DOKill();
+
+        if (isMove)
+            _childTransform.DOAnchorPosX(_originPos.x - 30, 0.2f);
         else
-            _childTransform.DOAnchorPosX(0, 0.2f);
+            _childTransform.DOAnchorPosX(_originPos.x, 0.2f);
     }
 
     public void InvUISet(bool isSelect)
