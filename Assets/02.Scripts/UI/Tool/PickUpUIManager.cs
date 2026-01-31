@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PickUpUIManager : MonoSingleton<PickUpUIManager>
 {
@@ -8,6 +9,15 @@ public class PickUpUIManager : MonoSingleton<PickUpUIManager>
     [SerializeField] private GameObject _eKeyImage;
 
     public bool IsCanUse { get; private set; }
+
+    private void Update()
+    {
+        if (Keyboard.current.eKey.wasPressedThisFrame && IsCanUse)
+        {
+            Debug.Log("Ekey");
+        }
+    }
+
 
     public void CanUseEKey(bool isCan)
     {
