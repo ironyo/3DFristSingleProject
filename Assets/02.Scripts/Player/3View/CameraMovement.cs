@@ -51,7 +51,7 @@ public class CameraMovement : MonoBehaviour
 
     private void HandleLook()
     {
-        rotX += lookInput.y * sensitivity * Time.deltaTime;
+        rotX += -lookInput.y * sensitivity * Time.deltaTime;
         rotY += lookInput.x * sensitivity * Time.deltaTime;
 
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
